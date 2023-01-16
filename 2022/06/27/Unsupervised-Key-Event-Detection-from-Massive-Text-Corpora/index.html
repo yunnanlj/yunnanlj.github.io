@@ -16,18 +16,37 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="标签 - 日志">
-<meta property="og:url" content="http://example.com/tags/%E6%97%A5%E5%BF%97/index.html">
+  <meta name="description" content="这篇文章提出了一个新任务，从无监督的方式从海量文本中检测出关键事件(中间级别的事件检测)。从新闻语料中自动检测出事件是快速构建结构知识的关键，现实世界中事件的粒度都有很多，从主题级别的事件粒度到动作粒度的事件。较大的主题事件粒度不能很好的关注到细化的动作级别事件粒度，而细化的动作级别事件粒度不能捕捉到主题，中间级别的事件能够同时含有不同粒度的事件信息，有利于事件理解和组织。 一些概念">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Unsupervised Key Event Detection from Massive Text Corpora">
+<meta property="og:url" content="http://example.com/2022/06/27/Unsupervised-Key-Event-Detection-from-Massive-Text-Corpora/index.html">
 <meta property="og:site_name" content="消逝在地平线上">
+<meta property="og:description" content="这篇文章提出了一个新任务，从无监督的方式从海量文本中检测出关键事件(中间级别的事件检测)。从新闻语料中自动检测出事件是快速构建结构知识的关键，现实世界中事件的粒度都有很多，从主题级别的事件粒度到动作粒度的事件。较大的主题事件粒度不能很好的关注到细化的动作级别事件粒度，而细化的动作级别事件粒度不能捕捉到主题，中间级别的事件能够同时含有不同粒度的事件信息，有利于事件理解和组织。 一些概念">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-06-27T01:05:59.000Z">
+<meta property="article:modified_time" content="2022-06-27T01:49:28.321Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
-  <title>标签 - 日志 - 消逝在地平线上</title>
+  <title>Unsupervised Key Event Detection from Massive Text Corpora - 消逝在地平线上</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -54,7 +73,7 @@
 
 
 <body>
-  <header style="height: 80vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -174,22 +193,52 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('/img/default.png') no-repeat center center;
+         style="background: url('/img/yd.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="标签 - 日志">
+            <span class="h2" id="subtitle" title="Unsupervised Key Event Detection from Massive Text Corpora">
               
             </span>
 
             
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-06-27 09:05" pubdate>
+        2022年6月27日 上午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      192 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      1 分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
           </div>
 
-          
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
           
         </div>
       </div>
@@ -198,49 +247,108 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 2 篇文章</p>
-  <hr>
-  
-  
-    
       
-      <p class="h5">2023</p>
-    
-    <a href="/2023/01/17/2022%E5%B9%B4%E8%AE%B0%E5%BD%95/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">2022年记录</span>
-      <time style="float: right;">01-17</time>
-    </a>
-  
-    
-      
-      <p class="h5">2021</p>
-    
-    <a href="/2021/11/25/frist/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">第一个博客</span>
-      <time style="float: right;">11-25</time>
-    </a>
-  
-</div>
 
-
-
-
-
-              </div>
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Unsupervised Key Event Detection from Massive Text Corpora</h1>
+            
+            <div class="markdown-body">
+              <p>这篇文章提出了一个新任务，从无监督的方式从海量文本中检测出关键事件(中间级别的事件检测)。从新闻语料中自动检测出事件是快速构建结构知识的关键，现实世界中事件的粒度都有很多，从主题级别的事件粒度到动作粒度的事件。较大的主题事件粒度不能很好的关注到细化的动作级别事件粒度，而细化的动作级别事件粒度不能捕捉到主题，中间级别的事件能够同时含有不同粒度的事件信息，有利于事件理解和组织。</p>
+<h2 id="一些概念"><a href="#一些概念" class="headerlink" title="一些概念"></a>一些概念</h2>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/01/17/2022%E5%B9%B4%E8%AE%B0%E5%BD%95/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">2022年记录</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/06/26/test/">
+                        <span class="hidden-mobile">test</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div class="disqus" style="width:100%">
+    <div id="disqus_thread"></div>
+    
+      <script>
+        Fluid.utils.loadComments('#disqus_thread', function() {
+          Fluid.utils.createCssLink('https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css');
+          Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js', function() {
+            new DisqusJS({
+              shortname: 'fluid',
+              apikey: ''
+            });
+          });
+        });
+      </script>
+    
+    <noscript>Please enable JavaScript to view the comments</noscript>
+  </div>
+
+
+              </article>
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -323,6 +431,19 @@
   
 
 
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
 
 
 
